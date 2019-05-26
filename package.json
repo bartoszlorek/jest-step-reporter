@@ -1,0 +1,23 @@
+{
+  "name": "jest-step-reporter",
+  "version": "1.0.0",
+  "description": "Jest reporter extending default one with steps",
+  "main": "index.js",
+  "scripts": {
+    "start": "jest --watch --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartoszlorek/jest-step-reporter.git"
+  },
+  "author": "Bartosz Lorek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bartoszlorek/jest-step-reporter/issues"
+  },
+  "homepage": "https://github.com/bartoszlorek/jest-step-reporter#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}
