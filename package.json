@@ -16,7 +16,10 @@
     "url": "https://github.com/bartoszlorek/jest-step-reporter/issues"
   },
   "homepage": "https://github.com/bartoszlorek/jest-step-reporter#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.5",
+    "babel-jest": "^24.8.0"
+  },
   "dependencies": {
     "jest": "^24.8.0"
   }

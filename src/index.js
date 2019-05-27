@@ -1,13 +1,21 @@
 const VerboseReporter = require('@jest/reporters/build/verbose_reporter');
 
+const passIcon = '✓';
+const failIcon = '✕';
+
+const currentSteps = [];
+
 class JestStepReporter extends VerboseReporter.default {
   constructor(globalConfig) {
     super(globalConfig);
   }
 
-  onRunStart(aggregatedResults, options) {
-    console.log('onRunStart');
+  static step(description, fn) {
+    currentSteps.push(description);
+    fn();
+  }
 
+  onRunStart(aggregatedResults, options) {
     super.onRunStart(aggregatedResults, options);
   }
 
